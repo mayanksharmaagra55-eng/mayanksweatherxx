@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WeatherX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">🌦 WeatherX</div>
+    <ul>
+        <li><a href="firstwebpage.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="glass">
+        <h1>Weather Forecast at Your Fingertips</h1>
+        <p>Live weather updates, forecasts & alerts instantly.</p>
+        <input type="text" id="cityInput" placeholder="Enter City">
+        <button onclick="getWeather()">Check Weather</button>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="card" id="temp">🌡 Temperature: --</div>
+    <div class="card" id="humidity">💧 Humidity: --</div>
+    <div class="card" id="wind">🌬 Wind: --</div>
+    <div class="card" id="weather">☀ Weather: --</div>
+</section>
+
+<section class="forecast">
+    <h2 class="center">5-Day Forecast</h2>
+    <div class="grid" id="forecastGrid">
+        <div class="card">Search a city</div>
+    </div>
+</section>
+
+<section>
+    <h2 class="center">Weather Alerts</h2>
+    <div class="card alert" id="alertBox">No alerts yet.</div>
+</section>
+
+<footer>Made by Mayank Sharma | CodTech Intern 2026</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

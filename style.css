@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    color:white;
+    background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1c92d2);
+    background-size:400% 400%;
+    animation:bgMove 12s ease infinite;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 60px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(18px);
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:80vh;
+}
+
+.glass,.page-card{
+    width:75%;
+    padding:55px;
+    border-radius:30px;
+    text-align:center;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(20px);
+}
+
+h1{
+    font-size:56px;
+    margin-bottom:20px;
+}
+
+h2{
+    margin:30px 0 20px;
+}
+
+p{
+    font-size:19px;
+    line-height:1.7;
+}
+
+input{
+    width:70%;
+    padding:16px 20px;
+    border:none;
+    border-radius:35px;
+    margin-top:20px;
+    outline:none;
+}
+
+button{
+    margin-top:22px;
+    padding:16px 34px;
+    border:none;
+    border-radius:35px;
+    background:#00d4ff;
+    color:white;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.stats,.grid{
+    display:flex;
+    gap:22px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:45px;
+}
+
+.card{
+    background:rgba(255,255,255,.12);
+    padding:28px;
+    border-radius:22px;
+    min-width:240px;
+}
+
+.alert{
+    width:70%;
+    margin:auto;
+}
+
+.center{
+    text-align:center;
+}
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    padding:22px;
+    background:rgba(0,0,0,.25);
+}
